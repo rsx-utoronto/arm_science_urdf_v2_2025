@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="arm_science_urdf_v2_2025">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.61607918420027E-18 -2.62011705457445E-18 0.00437247635063724"
+        rpy="0 0 0" />
+      <mass
+        value="0.124661946710585" />
+      <inertia
+        ixx="0.000147804282431458"
+        ixy="-2.46473848275475E-20"
+        ixz="5.98569127931025E-22"
+        iyy="0.000147804282431458"
+        iyz="-1.58361038714387E-21"
+        izz="0.000293922860163162" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_science_urdf_v2_2025/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_science_urdf_v2_2025/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="1.9697247504648E-17 -5.48442406081518E-07 0.0336041265825653"
+        rpy="0 0 0" />
+      <mass
+        value="0.137634968166129" />
+      <inertia
+        ixx="0.000294001564310723"
+        ixy="7.23213894615097E-20"
+        ixz="-2.4475271589757E-19"
+        iyy="0.000446367257769463"
+        iyz="3.10211596831567E-09"
+        izz="0.000373994827351756" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_science_urdf_v2_2025/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_science_urdf_v2_2025/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0135"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="-0.0522125 -0.0966215327084989 0.148851302099507"
+        rpy="0 0 0" />
+      <mass
+        value="1.79663833155198" />
+      <inertia
+        ixx="0.034948366475065"
+        ixy="5.79714331968255E-19"
+        ixz="1.46776781354339E-18"
+        iyy="0.0329129866831077"
+        iyz="0.00437798607290386"
+        izz="0.00323311772636409" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_science_urdf_v2_2025/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_science_urdf_v2_2025/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_2"
+    type="continuous">
+    <origin
+      xyz="0.049213 1.25E-05 0.0747"
+      rpy="-1.57 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-0.0519999999999999 0.0439448103746622 0.0941788323266333"
+        rpy="0 0 0" />
+      <mass
+        value="0.835379809263028" />
+      <inertia
+        ixx="0.00285109721356341"
+        ixy="4.24281939090332E-19"
+        ixz="-1.56605634392135E-20"
+        iyy="0.00205832059328011"
+        iyz="-0.000294247168897304"
+        izz="0.00213339156323276" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_science_urdf_v2_2025/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_science_urdf_v2_2025/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_3"
+    type="continuous">
+    <origin
+      xyz="-0.00021 -0.11299 0.38408"
+      rpy="0 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-0.0371250000000001 0.0564761253072448 0.00730060720519843"
+        rpy="0 0 0" />
+      <mass
+        value="0.221172514457843" />
+      <inertia
+        ixx="0.000263084146702644"
+        ixy="1.36690314104396E-20"
+        ixz="2.96147889359359E-20"
+        iyy="0.000181921460945624"
+        iyz="-1.69928336676005E-05"
+        izz="0.000254012067243754" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_science_urdf_v2_2025/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_science_urdf_v2_2025/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_4"
+    type="continuous">
+    <origin
+      xyz="-0.009875 0.161 0.11075"
+      rpy="0 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="drill_bit">
+    <inertial>
+      <origin
+        xyz="8.67361737988404E-19 1.38777878078145E-16 -0.0902999999999997"
+        rpy="0 0 0" />
+      <mass
+        value="0.0176714586764426" />
+      <inertia
+        ixx="1.49747204513396E-05"
+        ixy="1.04474634658391E-24"
+        ixz="-9.02347851481604E-23"
+        iyy="1.49747204513396E-05"
+        iyz="1.86019641639696E-21"
+        izz="4.97009775274947E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_science_urdf_v2_2025/meshes/drill_bit.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_science_urdf_v2_2025/meshes/drill_bit.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_5"
+    type="continuous">
+    <origin
+      xyz="-0.037125 0.067 0.0483"
+      rpy="0 0 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="drill_bit" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>
